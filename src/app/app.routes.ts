@@ -14,4 +14,12 @@ export const routes: Routes = [
     path: 'notifications',
     loadComponent: () => import('./notifications/notifications.page').then( m => m.NotificationsPage)
   },
+  {
+    path: 'header',
+    loadComponent: () => import('./shared/header/header.page').then( m => m.HeaderPage)
+  },
+  {
+    path: 'footer',
+    loadComponent: () => import('./shared/footer/footer.page').then( m => m.FooterPage)
+  },
 ];
