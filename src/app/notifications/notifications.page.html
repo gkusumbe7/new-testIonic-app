@@ -12,14 +12,15 @@
   </ion-header>
 
 
-<ion-card class="hoverEffect m-10 p-3">
-  <p class="fs-6 fw-bold border-2">Apply Success</p>
-  <p class="border-2">You has apply an job in Queenify Group as UI Designer</p>
+<ion-card class="hoverEffect m-10 p-3" *ngFor="let displayData of notifications">
+  <p class="fs-6 fw-bold border-2" >{{displayData.title}}</p>
+  <p class="border-2">{{displayData.message}}</p>
   <div class="d-flex flex-row justify-content-between">
-    <div class="hrs">10h ago</div>
-    <div>Mark as read</div>
+    <div class="hrs">{{displayData.time}}</div>
+    <div>{{displayData.seen}}</div>
   </div>
 </ion-card>
+
 </ion-content>
 
 
