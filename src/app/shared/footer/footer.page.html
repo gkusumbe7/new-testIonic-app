@@ -15,15 +15,17 @@
 <ion-footer>
   <ion-toolbar>
     <div class="footer-icons">
-      <ion-button routerLink="/home">
-        Home  
+      <ion-button routerLink="/home" fill="clear"> 
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+  
       </ion-button>
-      <ion-button routerLink="/message">
-        Messges
+      <ion-button routerLink="/notifications" fill="clear">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="notifications"></mat-icon>
+  
       </ion-button>
-      <!-- <a >Go to Home</a> -->
-      <!-- <a routerLink="/message">  </a> 
-      <a routerLink="/notification"> <mat-icon>account_circle</mat-icon> </a>  -->
-    </div>
+      <ion-button routerLink="/messages" fill="clear">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="message"></mat-icon>
+      </ion-button>
+     </div>
   </ion-toolbar>  
 </ion-footer>

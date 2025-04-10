@@ -21,11 +21,11 @@ export const routes: Routes = [
   {
     path: 'footer',
     loadComponent: () => import('./shared/footer/footer.page').then( m => m.FooterPage)
+  },   {
+    path: 'messages',
+    loadComponent: () => import('./components/messages/messages.page').then( m => m.MessagesPage)
   },
-  {
-    path: 'message',
-    loadComponent: () => import('./components/message/message.page').then( m => m.MessagePage)
-  },
+ 
 ];
 
 
