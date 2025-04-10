@@ -12,7 +12,7 @@ export const routes: Routes = [
   },
   {
     path: 'notifications',
-    loadComponent: () => import('./notifications/notifications.page').then( m => m.NotificationsPage)
+    loadComponent: () => import('./components/notifications/notifications.page').then( m => m.NotificationsPage)
   },
   {
     path: 'header',
@@ -22,4 +22,11 @@ export const routes: Routes = [
     path: 'footer',
     loadComponent: () => import('./shared/footer/footer.page').then( m => m.FooterPage)
   },
+  {
+    path: 'message',
+    loadComponent: () => import('./components/message/message.page').then( m => m.MessagePage)
+  },
 ];
+
+
+
